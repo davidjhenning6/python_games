@@ -77,11 +77,17 @@ def paddle_b_down():
 
 # Key binds
 window.listen()
+# Player A controls
 window.onkeypress(paddle_a_up, "w")
 window.onkeypress(paddle_a_down, "s")
 
+#Player B controls
 window.onkeypress(paddle_b_up, "Up")
 window.onkeypress(paddle_b_down, "Down")
+
+# Exit
+window.onkeypress(turtle.bye, "Escape")
+
 
 # game loop
 while True:
